@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBite - Select Payment</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .payment-card {
+            border: 2px solid #ffc107;
+            background-color: #ffffff;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+        .payment-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            background-color: #fffdf5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning fs-4" href="index.html">CampusBite 🍔</a>
+            <a href="cart.html" class="btn btn-outline-light btn-sm">Back to Cart</a>
+        </div>
+    </nav>
+
+    <!-- Payment Selection Main Section -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5">
+                
+                <div class="text-center mb-4">
+                    <h3 class="fw-bold text-dark mb-1">Select Payment Method</h3>
+                    <p class="text-secondary small">Choose how you want to complete your order</p>
+                </div>
+
+                <!-- Total Amount Summary Card -->
+                <div class="bg-white p-4 rounded-4 shadow-sm mb-4 border text-center">
+                    <span class="text-secondary fw-semibold d-block mb-1">Total Amount Due</span>
+                    <!-- The exact ID our JS will target -->
+                    <span class="fw-bold fs-2 text-dark" id="checkoutTotal">₦0</span>
+                    <small class="text-muted d-block mt-1">(Includes ₦200 Campus Runner Fee)</small>
+                </div>
+
+                <!-- Pay with Transfer Option Card (Calls function from checkout.js) -->
+                <!-- Native HTML Link Card for Bank Transfer -->
+<a href="account.html" class="payment-card p-4 rounded-4 text-start d-flex align-items-center justify-content-between mb-4 text-decoration-none d-block shadow-sm">
+    <div class="d-flex align-items-center gap-3">
+        <div class="fs-1 text-warning">🏦</div>
+        <div>
+            <h5 class="fw-bold text-dark mb-1">Pay with Bank Transfer</h5>
+            <p class="text-secondary small mb-0">Click to get account number</p>
+        </div>
+    </div>
+    <div class="fs-4 text-warning fw-bold">→</div>
+</a>
+                <!-- Security Note -->
+                <div class="text-center text-muted small">
+                    <p class="mb-0">🔒 Safe & Encrypted Payment for Campus Students</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Linked External JS File Only -->
+    <script src="checkout.js"></script>
+</body>
+</html>

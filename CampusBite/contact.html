@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bites | Campus Food, Delivered Fast</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light grey navbar-light border position-sticky top-0 shadow-sm">
+    <div class="container-fluid">
+     <a class="navbar-brand fw-bold fs-3 text-warning" href="./index.html"><span>Campus</span><span class="text-dark">Bite</span><span class="text-dark">.</span></a>
+
+      <button class="navbar-toggler"data-bs-toggle="collapse"data-bs-target="#demo"> <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse justify-content-end navbar-collapse" id="demo">
+       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-warning fw-semibold px-4" href="./cart.html">🛒 My Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./login.html">Login</a>
+                </li>
+                
+
+             </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <header class=" container my-5 text-center px-5">
+    <h4 class="text-warning fw-bold mb-2">WE'RE HERE TO HELP</h4>
+    <h2 class="fw-bold text-dark display-5">Get in Touch</h2>
+    <p class="text-secondary">Have questions about your order or want to become a campus vendor? Send us a message!</p>
+  </header>
+
+  <main class="container my-5">
+    <div class="row g-4"> 
+         <div class="col-lg-5 col-md col-sm-12">
+        <div class="container bg-light border rounded shadow-sm mb-4">
+       
+           <div>
+               <h4 class="fw-bold text-dark mb-3">Campus Information 📍</h4>
+                <p class="text-secondary mb-4">We operate right on campus to ensure fast deliveries to all hostels and lecture halls.</p>
+           </div>
+
+           <div class="align-items-center mb-3 d-flex">
+            <span class="fs-4 me-3">📍</span>
+            <div>
+            <h5 class="fw-bold text-dark mb-0">Location</h5>
+            <p class="text-secondary fw-semibold">Paul University Campus, Awka</p>
+            </div>
+           </div>
+
+           <div class="align-items-center mb-3 d-flex">
+            <span class="fs-4 me-3">📞</span>
+            <div>
+            <h5 class="fw-bold text-dark mb-0">Phone & WhatsApp</h5>
+            <a href="https://wa.me/+2349066855076" target="_blank" class="text-secondary text-decoration-none fw-semibold">+234 906 Campus Bite 💬</a>
+           </div>
+           </div>
+
+           <div class="align-items-center mb-3 d-flex">
+            <span class="fs-4 me-3">✉️</span>
+            <div>
+            <h5 class="fw-bold text-dark mb-0">Email Us</h5>
+             <a href="mailto:support@campusbite.com" class="text-secondary fw-semibold text-decoration-none">
+                support@campusbite.com 📩
+              </a>
+           </div>
+           </div>
+          </div>
+          
+
+         <div class="bg-warning bg-opacity-10 border border-warning rounded p-4">
+            <h5 class="text-dark fw-bold mb-2"> ⚡ Delivery Hours</h5>
+            <p class="text-secondary smallm mb-0">Monday – Saturday: 8:00 AM – 10:00 PM<br>Sunday: 12:00 PM – 9:00 PM</p>
+         </div>
+         </div>
+
+         <div class="col-lg-7 col-md col-sm-12">
+          <div class="container bg-white border rounded p-4 shadow-sm">
+            <h3 class="fw-bold text-center">Send Us a Message</h3>
+            
+            
+           <form action="">
+            <div class="row g-3">
+              <div class="col-lg col-md col-sm-12">
+                <label for="fullName" class="form-label fw-semibold text-secondary">Full Name</label>
+                <input type="text" class="form-control p-2" id="fullName" placeholder="e.g. Ugwa Divine" required>
+              </div>
+
+              <div class="col-lg col-md col-sm-12">
+                <label for="emailAddr" class="form-label fw-semibold text-secondary">Email Address</label>
+                <input type="email" class="form-control p-2" id="emailAddr" placeholder="name@example.com" required>
+              </div>
+            </div>
+
+            <div>
+              <label for="hostelLoc" class="form-label fw-semibold text-secondary">Hostel / Delivery Location</label>
+                <input type="text" class="form-control p-2" id="hostelLoc" placeholder="e.g. A Wing, Room 2">
+            </div>
+
+            <div>
+              <label for="subjectMsg" class="form-label fw-semibold text-secondary">Subject</label>
+                <select class="form-select p-2" id="subjectMsg">
+                  <option selected>Order Inquiry</option>
+                  <option>Vendor Partnership</option>
+                  <option>Feedback & Suggestions</option>
+                  <option>Other</option>
+                </select>
+            </div>
+
+            <div>
+              <label for="messageBox" class="form-label fw-semibold text-secondary">Message</label>
+                <textarea class="form-control p-2" id="messageBox" rows="4" placeholder="How can we help you today?" required></textarea>
+            </div>
+
+            <div class="mt-4">
+               <button type="submit" class="btn btn-warning fw-semibold px-4 py-2 w-100 fs-5">Send Message</button>
+            </div>
+
+           </form>
+          
+          </div>
+         </div>
+      </div>   
+
+       
+  </main>
+
+  <footer class="bg-dark text-white py-4 text-center mt-5">
+    <div class="container">
+        <h4 class="fw-bold mb-3">CampusBite.</h4>
+        <p class="mb-4 fs-5">Bringing delicious meals closer to students.</p>
+        <p class="text-small mb-0">&copy; 2026 CampusBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bites | Campus Food, Delivered Fast</title>
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cart.js">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light grey navbar-light border position-sticky top-0 shadow-sm">
+    <div class="container-fluid">
+     <a class="navbar-brand fw-bold fs-3 text-warning" href="./index.html"><span>Campus</span><span class="text-dark">Bite</span><span class="text-dark">.</span></a>
+
+      <button class="navbar-toggler"data-bs-toggle="collapse"data-bs-target="#demo"> <span class="navbar-toggler-icon"></span></button>
+      <div class="collapse justify-content-end navbar-collapse" id="demo">
+       <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fw-semibold" href="./menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-warning fw-semibold px-4" href="./cart.html">🛒 My Cart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="./login.html">Login</a>
+                </li>
+               
+
+             </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container text-center my-5 px-5">
+      <h5 class="text-warning fw-bold mb-2">WHAT ARE YOU CRAVING?</h5>
+      <h1 class="display-5 fw-bold">Explore Our Menu</h1>
+      <p class="text-secondary">Discover Delicious Meals For Your Next Campus Craving.</p>
+  </header>
+
+  <main>
+    <section class="container my-5 text-center">
+        <div class="row gap-3 p-0">
+            <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+                <div>
+                    <img class="img-fluid w-100 rounded" src="./Images/beef_burger.jfif" alt="" style="object-fit: cover; height: 200px;">
+                </div>
+            
+              <div>
+                 <h4 class="fw-bold">Beef Burger</h4>
+                 <p class="text-secondary fs-small">A juicy burger served with fresh ingredients.</p>
+                 <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                 <span class="fw-bold text-dark fs-5">₦3500</span>
+                 <button class="btn btn-warning fw-semibold" onclick="addToCart(1,'Beef Burger', 3500)">+ Add to Cart</button>
+                 </div>
+              </div>
+            </div>
+
+            <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+              <div>
+                <img class="img-fluid w-100 rounded" src="./Images/sharwama.jfif" alt="" style="height: 200px; object-fit: cover;">
+              </div>
+                <div>
+                    <h4 class="fw-bold">Sharwama</h4>
+                    <p class="text-secondary fs-small">A delicious wrap filled with tender meat and fresh vegetables.</p>
+                    <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2500</span>
+                    <button class="btn btn-warning fw-semibold" onclick="addToCart(2,'Sharwama', 2500)">+ Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+           <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+             <div>
+                <img class="img-fluid w-100 rounded" src="./Images/cheese_pizza.jfif" alt="" style="height: 200px; object-fit: cover;">
+             </div>
+             <div>
+               <h4 class="fw-bold">Cheese Pizza</h4>
+               <p class="text-secondary fs-small">Freshly baked pizza topped with cheese.</p>
+               <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                <span class="fw-bold text-dark fs-5">₦5000</span>
+                <button class="btn btn-warning fw-semibold" onclick="addToCart(3,'Cheese Pizza', 5000)">+ Add to Cart</button>
+               </div>
+            </div>
+           </div>
+
+           <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/chickenchips.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Chicken and Chips</h4>
+                <p class="text-secondary fs-small">Crispy chicken with delicious potatoe chips.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(4,'Chicken and Chips', 2500)">+ Add to Cart</button>
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+           <div class="row gap-3 p-0 my-5">
+            <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/milkshake.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Milkshake</h4>
+                <p class="text-secondary fs-small">Creamy and delicious milkshake.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(5,'Milkshake', 2000)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/popcorn.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Popcorn</h4>
+                <p class="text-secondary fs-small">Freshly popped corn.</p>
+                
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦1500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(6,'Popcorn', 1500)">+ Add to Cart</button>
+
+                </div>
+            </div>
+          </div>
+
+              <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/bread.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Bread</h4>
+                <p class="text-secondary fs-small">Fresh and delicious bread.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦1500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(7,'Bread', 1500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+             <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/Ice cream.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Ice Cream</h4>
+                <p class="text-secondary fs-small">Creamy and delicious ice cream.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(8,'Ice Cream', 2000)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+        </div>  
+
+        <div class="row gap-3 p-0 my-5">
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/swallow.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Swallow</h4>
+                <p class="text-secondary fs-small">Tasty swallow with delicious soup and assorted meat.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦5000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(9,'Swallow', 5000)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/spag.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Spaghetti</h4>
+                <p class="text-secondary fs-small">Stir-fry spaghetti cooked with fresh peppers and vegetables.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(10,'Spaghetti', 2000)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/friedrice.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Fried Rice and Chicken</h4>
+                <p class="text-secondary fs-small">Tasty fried rice with lots of savourness and seasoned chicken.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦4000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(11,'Fried Rice and Chicken', 4000)">+ Add to Cart</button>
+
+                </div>
+            </div>
+          </div>
+
+           <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/jollof_rice.jfif" alt="" style="height: 200px; object-fit: cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Jollof Rice and Chicken</h4>
+                <p class="text-secondary fs-small">Tasty Jollof rice with seasoned chicken.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦3000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(12,'Jollof Rice and Chicken', 3000)">+ Add to Cart</button>
+
+                </div>
+            </div>
+          </div>
+         </div>
+         
+              
+          <div class="row gap-3 p-0 my-5">
+           <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/meatpie.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Meat Pie</h4>
+                <p class="text-secondary fs-small">Oven-baked, golden pastry stuffed with meat.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(13,'Meat pie', 500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+            <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/sussageroll.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Sussage Roll</h4>
+                <p class="text-secondary fs-small">Oven-baked, golden pastry stuffed with meat.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(14,'Sussage Roll', 500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/fruit smoothie.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Fruit Smoothie</h4>
+                <p class="text-secondary fs-small">Refreshing fruity campusmocktail served with ice-cold.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(15,'Fruit Smoothie', 2500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/plantainchips.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Plantain Chips</h4>
+                <p class="text-secondary fs-small">Golden plantain chips for a quick lecture snack.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦1500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(16,'Plantain Chips', 2500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+          </div>
+
+
+           <div class="row gap-3 p-0 my-5">
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/beansandplantain.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Beans and Plantain</h4>
+                <p class="text-secondary fs-small">Hot protein stew-beans served with fried plantain.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(17,'Beans and Plantain', 2500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/ofada rice.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Ofada Rice</h4>
+                <p class="text-secondary fs-small">Locally grown ofada rice paired with spicy stew.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦5000</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(18,'Ofada Rice', 2500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/suya.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Suya</h4>
+                <p class="text-secondary fs-small">Smoky beef suya spiced to perfection with fresh onions.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦2500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(19,'Suya', 2500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6 col-sm-12 bg-white g-0 border rounded text-center shadow-sm">
+            <div>
+                <img class="img-fluid w-100 rounded" src="./Images/peppersoup.jfif" alt="" style="height: 200px; object-fit:cover;">
+            </div>
+            <div>
+                <h4 class="fw-bold">Pepper Soup</h4>
+                <p class="text-secondary fs-small">Hot and spicy traditional broyh packed with meat.</p>
+                <div class="justify-content-between align-items-center d-flex mt-3 mb-2 me-2 ms-2">
+                    <span class="fw-bold text-dark fs-5">₦4500</span>
+                   <button class="btn btn-warning fw-semibold" onclick="addToCart(20,'Pepper Soup', 2500)">+ Add to Cart</button>
+                </div>
+            </div>
+          </div>
+       </div>
+
+        
+        
+
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+        <h4 class="fw-bold mb-3">CampusBite.</h4>
+        <p class="mb-4 fs-5">Bringing delicious meals closer to students.</p>
+    
+  <p class="text-small mb-0">&copy; 2026 CampusBite. All rights reserved.</p>
+  </div>
+   </footer> 
+
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 11;">
+      <div id="cartToast" class="toast align-items-center text-white bg-dark border-0 rounded-3 shadow-lg" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body fw-semibold text-warning" id="toastMessage">
+            Item added to cart! 🛒
+          </div>
+          <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+     <script src="menu.js"></script>
+</body>
+</html>
